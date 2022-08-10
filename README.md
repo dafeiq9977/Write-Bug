@@ -5,3 +5,6 @@ README.md叙述了实习期间遇到的问题和解决方案
 或者  
 更改VSCode终端为cmd(默认是powershell)  
 ![pic1](https://github.com/dafeiq9977/Write-Bug/tree/main/pic/pic1.jpg)
+## 2. 开发环境常用命令
+npm install <pkg name> --save   下载包，并保存到package.json中  
+tsc --init  生成tsconfig.json文件  
