@@ -13,4 +13,25 @@ tsc --init  生成tsconfig.json文件
 2. 指定编辑器初始值为某个字符串  或  HTML某个节点的里的内容  
 3. 添加监听器 编辑器内容改变时获取编辑器内的字符串内容  
 4. 设置编辑器为只读  
-5. 通过Editor类的action函数，获取编辑器的各种上下文，对编辑器进行操作（获取编辑器里的内容，插入新的文本）
+5. 通过Editor类的action函数，获取编辑器的各种上下文，对编辑器进行操作（获取编辑器里的内容，插入新的文本）  
+#### 自定义快捷键
+  修改preset-gfm插件的gfm变量  
+  修改方法：  
+  ```
+  import { 快捷键行为 } from '@milkdown/preset-gfm';
+  gfm.configure(快捷键对应的行为, {  
+        keymap: {  
+            [SupportedKeys.Bold]: ['Mod-g', 'Mod-b'],  
+        }  
+      })  // 返回设置后的gfm，用这个返回值use
+  ```
+  快捷键行为有：  
+  1. blockquote 块引用  
+  2. bulletList 变成修饰符是·的列表  
+  3. codeFence 代码块  
+  4. codeInline 行内代码  
+  5. orderedList 变成有序列表  
+  6. em 斜体  
+  7. strong 粗体  
+  8. H1~H2 变成对应大小的标题  
+  9. 
