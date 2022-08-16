@@ -1,10 +1,15 @@
 # Write-Bug
 README.md叙述了实习期间遇到的问题和解决方案
-## 1. VScode powershell不允许运行脚本解决方案
+## 环境配置问题
+#### 1. VScode powershell不允许运行脚本解决方案
 以管理员打开身份打开powershell，执行`set-ExecutionPolicy RemoteSigned`命令，执行`get-ExecutionPolicy`查看修改结果  
 或者  
 更改VSCode终端为cmd(默认是powershell)  
 ![pic1](https://github.com/dafeiq9977/Write-Bug/tree/main/pic/pic1.jpg)
+#### 2. 更换npm下载源  
+查看当前下载源：`npm config get registry`   // 当前下载源https://registry.npmjs.org/  
+替换为淘宝源：`npm config set registry https://registry.npm.taobao.org`  
+安装cnmpm：`npm install -g cnpm --registry=https://registry.npm.taobao.org`
 ## 2. 开发环境常用命令
 npm install <pkg name> --save   下载包，并保存到package.json中  
 tsc --init  生成tsconfig.json文件  
@@ -35,3 +40,5 @@ tsc --init  生成tsconfig.json文件
   7. strong 粗体  
   8. H1~H2 变成对应大小的标题  
   9. 
+## 4. vue3
+  
