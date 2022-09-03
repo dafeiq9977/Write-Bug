@@ -46,4 +46,6 @@ tsc --init  生成tsconfig.json文件
     rgb(255, 255, 255)
     rgba(255, 255, 255, 1)
     hsl(120,100%,50%)
-    hsla(120,100%,50%,1)
+    hsla(120,100%,50%,1)  
+#### CSS设置网页图标  
+    `<link rel="icon" href="../../../static/favicon2.ico" type="image/x-icon" />`
