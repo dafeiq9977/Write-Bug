@@ -11,7 +11,18 @@ README.md叙述了实习期间遇到的问题和解决方案
 替换为淘宝源：`npm config set registry https://registry.npm.taobao.org`  
 安装cnmpm：`npm install -g cnpm --registry=https://registry.npm.taobao.org`
 ## 2. 开发环境常用命令
-npm install <pkg name> --save   下载包，并保存到package.json中  
+npm init -y  初始化一个nodejs模块，获得一个默认配置的package.json文件  
+npm install <pkg name> --save   下载包，并保存到package.json里的dependencies中  
+npm install <pkg name> --save-dev 下载的包保存在dependencies和devDependencies中  
+npm install <pkg name>@3.0.0  安装指定版本的包  
+node版本规则：  
+  3.2.1
+  最后一位的.1：微小的修改（bug fix或者其它微小的改动）
+  中间一位的.2：增加了新的特性，但是没有对原有的功能进行修改  
+  最前一位的.3：新版本与之前的版本不再兼容  
+npm uninstall <pkg name>  卸载指定包和这个包的依赖  
+npm uninstall --save-dev <pkg name>  卸载devDependencies这个包  
+
 tsc --init  生成tsconfig.json文件  
 ## 3. milkdown  
 1. 指定编辑器生成于哪个HTML节点下
